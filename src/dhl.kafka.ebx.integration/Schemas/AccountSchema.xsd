@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/AccountSchema"
+	xmlns:tns="http://www.example.org/AccountSchema"
+	xmlns:pns="urn:partner.soap.sforce.com"
+	elementFormDefault="qualified" xmlns:ens="urn:sobject.partner.soap.sforce.com">
+
+	<element name="sObject">
+          <complexType>
+          	<sequence>
+					<element name="LastModifiedDate" type="string" nillable="true" minOccurs="0"/>
+					<element name="Description" type="string" nillable="true" minOccurs="0"/>
+					<element name="Name" type="string" nillable="true" minOccurs="0"/>
+					<element name="AccountNumber" type="string" nillable="true" minOccurs="0"/>
+					<element name="BillingAddress">
+							<complexType>
+								<sequence>
+									<element name="state" type="string" nillable="true" minOccurs="0"/>
+									<element name="street" type="string" nillable="true" minOccurs="0"/>
+									<element name="postalcode" type="string" nillable="true" minOccurs="0"/>
+									<element name="country" type="string" nillable="true" minOccurs="0"/>
+									<element name="city" type="string" nillable="true" minOccurs="0"/>
+								</sequence>
+							</complexType>
+					</element>
+					<element name="Industry" type="string" nillable="true" minOccurs="0"/>
+					<element name="Type" type="string" nillable="true" minOccurs="0"/>
+					<element name="CleanStatus" type="string" nillable="true" minOccurs="0"/>
+					<element name="OwnerId" type="string" nillable="true" minOccurs="0"/>
+					<element name="CreatedById" type="string" nillable="true" minOccurs="0"/>
+					<element name="Phone" type="string" nillable="true" minOccurs="0"/>
+					<element name="ShippingAddress">
+						<complexType>
+							<sequence>
+									<element name="state" type="string" nillable="true" minOccurs="0"/>
+									<element name="street" type="string" nillable="true" minOccurs="0"/>
+									<element name="postalcode" type="string" nillable="true" minOccurs="0"/>
+									<element name="country" type="string" nillable="true" minOccurs="0"/>
+									<element name="city" type="string" nillable="true" minOccurs="0"/>
+								</sequence>
+							</complexType>
+					</element>
+					<element name="CreatedDate" type="string" nillable="true" minOccurs="0"/>
+					<element name="CustomerPriority__c" type="string" nillable="true" minOccurs="0"/>
+					<element name="LastModifiedById" type="string" nillable="true" minOccurs="0"/>
+				</sequence>
+            </complexType>
+   		</element>
+</schema>

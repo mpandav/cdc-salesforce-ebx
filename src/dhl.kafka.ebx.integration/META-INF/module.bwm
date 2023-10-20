@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_Bgh04G6EEe6I4-1DYsN7Tw" targetNamespace="http://tns.tibco.com/bw/composite/dhl.kafka.ebx.integration" name="dhl.kafka.ebx.integration" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_BpjOAG6EEe6I4-1DYsN7Tw" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_BppUoG6EEe6I4-1DYsN7Tw" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_BprJ0G6EEe6I4-1DYsN7Tw" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_BpvbQG6EEe6I4-1DYsN7Tw" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Bp5MQG6EEe6I4-1DYsN7Tw" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Bp7ogG6EEe6I4-1DYsN7Tw" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_Bp-r0G6EEe6I4-1DYsN7Tw" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_BlnwQG6EEe6I4-1DYsN7Tw" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_BlnwQW6EEe6I4-1DYsN7Tw" processName="dhl.kafka.ebx.integration.MP_Kafka_Subscriber"/>
+  </sca:component>
+  <sca:component xmi:id="_6I9loG8sEe6I4-1DYsN7Tw" name="Component1Process" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_6I-MsG8sEe6I4-1DYsN7Tw" processName="dhl.kafka.ebx.integration.Process"/>
+  </sca:component>
+</sca:composite>

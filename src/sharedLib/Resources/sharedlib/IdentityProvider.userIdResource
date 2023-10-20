@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:sp="http://xsd.tns.tibco.com/bw/sharedresource/trinity/models/securityprovider" xmlns:subject="http://xsd.tns.tibco.com/bw/sharedresource/trinity/models/identity/subject" xmi:id="_sU5rwG8fEe6I4-1DYsN7Tw" name="sharedlib.IdentityProvider" type="subject:SubjectConfiguration">
+  <jndi:configuration xsi:type="sp:IdentitySecurityProvider" xmi:id="_sU5rwW8fEe6I4-1DYsN7Tw">
+    <configuration xsi:type="subject:SubjectConfiguration" xmi:id="_sU5rwm8fEe6I4-1DYsN7Tw">
+      <substitutionBindings xmi:id="_to2m8G8fEe6I4-1DYsN7Tw" template="userpassword" propName="/SharedResources/HTTP/Auth/passWord"/>
+      <substitutionBindings xmi:id="_6225UG8fEe6I4-1DYsN7Tw" template="username" propName="/SharedResources/HTTP/Auth/userName"/>
+    </configuration>
+  </jndi:configuration>
+</jndi:namedResource>

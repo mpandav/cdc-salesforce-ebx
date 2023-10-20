@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tns.tibco.com/bw/json/1697810650140" elementFormDefault="qualified" targetNamespace="http://tns.tibco.com/bw/json/1697810650140">
+  <complexType name="CompanyElementType">
+    <sequence>
+      <element maxOccurs="1" minOccurs="0" name="content">
+        <complexType>
+          <sequence>
+            <element maxOccurs="1" minOccurs="0" name="Identification">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="content">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Name">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="content" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="LegalEntityIdentifier">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="content" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                      </sequence>
+                    </complexType>
+                  </element>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="AdditionalInformation">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="content">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="ActivitySector">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="content" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="Parent">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="content" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="blackListed">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="content" type="boolean"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="active">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="content" type="boolean"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="isConsolidated">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="content" type="boolean"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                      </sequence>
+                    </complexType>
+                  </element>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="Address">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="content">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Number">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="content" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="Street">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="content" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="City">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="content" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="Zipcode">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="content" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="Country">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="content" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="latitude">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="content" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="longitude">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="content" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                      </sequence>
+                    </complexType>
+                  </element>
+                </sequence>
+              </complexType>
+            </element>
+          </sequence>
+        </complexType>
+      </element>
+    </sequence>
+  </complexType>
+  <element name="CompanyElement" type="tns:CompanyElementType"/>
+</schema>
